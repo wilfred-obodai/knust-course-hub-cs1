@@ -358,51 +358,8 @@
         <script src="script.js"></script>
 
     </section>
-
-    <script>
-function enableNotifications() {
-    if (!("Notification" in window)) {
-        alert("This browser does not support notifications.");
-        return;
-    }
-
-    Notification.requestPermission().then(permission => {
-        if (permission === "granted") {
-            alert("Notifications enabled successfully!");
-        } else {
-            alert("Please allow notifications to use this feature.");
-        }
-    });
-}
-
-// TEST CLASS (CHANGE TIME TO 2 MINUTES FROM NOW)
-const classes = [
-    { name: "TEST CLASS", time: getTestTime() }
-];
-
-function getTestTime() {
-    const now = new Date();
-    now.setMinutes(now.getMinutes() + 2);
-    return now.getHours().toString().padStart(2, '0') + ":" +
-           now.getMinutes().toString().padStart(2, '0');
-}
-
-setInterval(() => {
-    const now = new Date();
-    const currentTime =
-        now.getHours().toString().padStart(2, '0') + ":" +
-        now.getMinutes().toString().padStart(2, '0');
-
-    classes.forEach(cls => {
-        if (currentTime === cls.time) {
-            new Notification("⏰ Class Reminder", {
-                body: cls.name + " starts soon!",
-            });
-        }
-    });
-}, 60000);
-</script>
-<!-- Footer -->
+        
+<!-- Footer  -->
     <footer>
         <p>© 2026 KNUST COURSE HUB-1 | BUILT BY OBODAI WILFRED</p>
     </footer>
@@ -410,5 +367,6 @@ setInterval(() => {
 </body>
 
 </html>
+
 
 
