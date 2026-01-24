@@ -1,14 +1,3 @@
-// 1. MOBILE HAMBURGER MENU LOGIC
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('#nav-list');
-
-if (menu) {
-    menu.addEventListener('click', function() {
-        menuLinks.classList.toggle('active');
-        menu.classList.toggle('is-active');
-    });
-}
-
 // 2. NOTIFICATION PERMISSION LOGIC
 function enableNotifications() {
     if (!("Notification" in window)) {
@@ -79,3 +68,4 @@ setInterval(() => {
         });
     }
 }, 60000);
+
