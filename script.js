@@ -21,6 +21,7 @@ function enableNotifications() {
 // 3. FULL CLASS SCHEDULE (Monday=1, Tuesday=2, etc.)
 // Time is set 10 minutes before the actual start for reminders
 const classSchedule = [
+    { name: "WORKING TEST", day: 6, time: "10:30" },
     // MONDAY
     { name: "CSM 157 (SCB-SF1)", day: 1, time: "12:50" },
     { name: "CSM 165 (SCB-SF1)", day: 1, time: "14:50" },
@@ -68,5 +69,6 @@ setInterval(() => {
         });
     }
 }, 60000);
+
 
 
