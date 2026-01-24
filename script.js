@@ -10,7 +10,7 @@ function enableNotifications() {
             alert("Notifications enabled!");
             new Notification("KNUST Course Hub", {
                 body: "Class alerts are now active!",
-                icon: "images/KNUST logo.png"
+                icon: "images/knust-logo.png"
             });
         } else {
             alert("Please allow notifications in your browser settings.");
@@ -68,4 +68,5 @@ setInterval(() => {
         });
     }
 }, 60000);
+
 
